@@ -25,12 +25,19 @@ https://docs.docker.com/desktop/setup/install/mac-install/
 
 Clone the repository into your /tmp file directory. This directory is being used because by default everything will be deleted once your reboot your computer. 
 ```
-git clone https://github.com/seanherbert105/DevSecOps-class.git
+git clone https://github.com/YOURGITHUB/DevSecOps-class.git
 ```
-
+Start your WSL Terminal
+```
+placeholder
+```
+## Build Docker
+```
+docker buildx build -t jenkins -f Dockerfile .
+```
 Next, go into the bin directory and run the bash script getting-started.sh
 ```
-bash getting-started.sh
+bash bin/getting-started.sh
 ```
 
 Now the Jenkins UI should be available on localhost (which is running on your local computer and not accessible to anyone else).
